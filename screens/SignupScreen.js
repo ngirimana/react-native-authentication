@@ -20,9 +20,10 @@ function SignupScreen() {
         "Authentication failed",
         "Could not create new user. Please check your input  and try again later!"
       );
+      setIsAuthenticating(false);
     }
    
-    setIsAuthenticating(false);
+    
   }
 
   if (isAuthenticating) {
